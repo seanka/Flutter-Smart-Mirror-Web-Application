@@ -44853,31 +44853,28 @@ bk(){var s=this
 s.bP()
 s.k9()
 A.Zi(B.uw,new A.UF(s))
-A.Zi(B.aR,new A.UG(s))
-if(A.fb(s.gfE())>12){s.ch="PM"
-s.cx=A.fb(s.gfE())-12}else{s.ch="AM"
-s.cx=A.fb(s.gfE())}},
+A.Zi(B.aR,new A.UG(s))},
 T(a,b){var s,r,q,p,o,n,m,l=this,k=null,j=t.w,i=b.a9(j).f
 j=b.a9(j).f
 s=l.y
 r=A.a9m(k,k,new A.ln(s===$?l.y="http://openweathermap.org/img/wn/10d@4x.png":s,1))
 s=l.x
-if(s===$)s=l.x=26.5
+if(s===$)s=l.x=99.9
 q=A.zc(l.e.ds(0,s)+"\xb0",B.Em,k,k)
 s=l.r
-p=A.zc(s===$?l.r="Light Shower":s,B.En,k,k)
+p=A.zc(s===$?l.r="weather description":s,B.En,k,k)
 o=l.f
 s=l.z
-n=o.ds(0,s===$?l.z=20:s)+"\xb0 / "
+n=o.ds(0,s===$?l.z=99:s)+"\xb0 / "
 s=l.Q
 m=t.U
-n=A.xt(k,A.H0(A.b([A.Z6(A.b([new A.oj(r,k),A.H0(A.b([q,p,B.AN,A.zc(n+o.ds(0,s===$?l.Q=30:s)+"\xb0",B.qK,k,k)],m),B.bs),B.AL],m),B.cL,B.cM),A.H7(k,k,B.i,k,1,k,k,300),B.AM],m),B.jq),k,k,k,45,10,k)
+n=A.xt(k,A.H0(A.b([A.Z6(A.b([new A.oj(r,k),A.H0(A.b([q,p,B.AN,A.zc(n+o.ds(0,s===$?l.Q=99:s)+"\xb0",B.qK,k,k)],m),B.bs),B.AL],m),B.cL,B.cM),A.H7(k,k,B.i,k,1,k,k,300),B.AM],m),B.jq),k,k,k,45,10,k)
 p=t.Fe
 q=A.Ol(k,k,B.c_,!0,k,A.ip(A.b([A.ip(k,B.Eo,A.a7o().ds(0,l.gfE())),A.ip(k,B.qK,", "+A.a7q().ds(0,l.gfE())+" "+A.a7p().ds(0,l.gfE()))],p),k,k),B.ao,k,k,1,B.ap)
 s=l.cx
 r=A.Ol(k,k,B.c_,!0,k,A.ip(A.b([A.ip(k,B.Ep,A.d(s===$?l.cx=0:s)+" "),A.ip(k,B.Eq,o.ds(0,A.Z_(l.gfE()))+" ")],p),k,k),B.ao,k,k,1,B.ap)
 s=l.ch
-return new A.pY(A.a9r(A.H7(k,A.yW(B.c4,A.b([n,A.xt(k,A.H0(A.b([q,A.Z6(A.b([r,A.H0(A.b([A.yF(A.zc(s===$?l.ch="":s,B.Er,k,k),k,k),A.yF(A.zc(o.ds(0,A.Z0(l.gfE())),B.CW,k,k),k,k)],m),B.bs)],m),B.cL,B.cM)],m),B.bs),k,k,45,k,55,k)],m),B.d3),B.l,k,j.a.b,k,k,i.a.a),!0),k)},
+return new A.pY(A.a9r(A.H7(k,A.yW(B.c4,A.b([n,A.xt(k,A.H0(A.b([q,A.Z6(A.b([r,A.H0(A.b([A.yF(A.zc(s===$?l.ch="":s,B.Er,k,k),k,k),A.yF(A.zc(o.ds(0,A.Z0(l.gfE())),B.CW,k,k),k,k)],m),B.bs)],m),B.cL,B.cM)],m),B.bs),k,k,55,k,55,k)],m),B.d3),B.l,k,j.a.b,k,k,i.a.a),!0),k)},
 k9(){var s=0,r=A.a7(t.z),q=this,p
 var $async$k9=A.a8(function(a,b){if(a===1)return A.a4(b,r)
 while(true)switch(s){case 0:p=A
@@ -44894,7 +44891,11 @@ $1(a){var s=this.a
 s.aF(new A.UE(s))},
 $S:40}
 A.UE.prototype={
-$0(){this.a.cy=new A.c3(Date.now(),!1)},
+$0(){var s=this.a
+s.cy=new A.c3(Date.now(),!1)
+if(A.fb(s.gfE())>12){s.ch="PM"
+s.cx=A.fb(s.gfE())-12}else{s.ch="AM"
+s.cx=A.fb(s.gfE())}},
 $S:0}
 A.UD.prototype={
 $0(){var s=this.a,r=this.b,q=r.c
